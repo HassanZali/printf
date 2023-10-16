@@ -1,0 +1,1 @@
+This project aims to create a customized printf function that mimics the functionality of the standard printf function in c programming language. The printf function is used for formatted output, allowing users to print data with specific formatting options
