@@ -14,6 +14,8 @@ int _printf(const char *format, ...)
 		{"%%", print_perct},
 		{"%d", print_dec},
 		{"%i", print_int},
+		{"%+", printf_characters},
+		{"%#", printf_characters},
 		{"%r", print_revrs_str},
 		{"%R", print_rot13},
 		{"%b", print_bin},
@@ -23,8 +25,9 @@ int _printf(const char *format, ...)
 		{"%X", print_HEX},
 		{"%S", print_exc_str},
 		{"%p", print_pointer},
+		{"% ", printf_characters},
+		{"%0", handle_zero_flag},
 	};
-	
 	va_list args;
 	int i = 0, len = 0;
 	int u;
@@ -40,6 +43,7 @@ Here:
 	while (u >= 0)
 	{
 		if (func[u].id[0] == format[i] && func[u].id[1] == format [i + 1])
+
 		{
 			len = len + func[u].func(args);
 			i = i + 2;

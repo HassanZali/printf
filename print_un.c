@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*print_int - function name to print integers
+*print_unsigned - function name to print integers
 *@args: parameter to take in arguments
 *
 *Return: return integers printed.

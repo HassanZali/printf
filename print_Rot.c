@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
+ *print_rot13 - print a number rot13 string
+ *@val: parameter to take arg value
  *
- *
- *
- *
- *
+ *Return: return counter.
  */
 int print_rot13(va_list val)
 {

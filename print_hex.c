@@ -20,7 +20,7 @@ int print_hex(va_list val)
 	}
 	counter++;
 	array = malloc(sizeof(int) *counter);
-	for (i = 0; i < counter; i++)
+	for (i = 0; i < counter; i--)
 	{
 		array[i] = rem % 16;
 		rem = rem / 16;

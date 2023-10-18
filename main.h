@@ -5,6 +5,7 @@
 #include <stdarg.h>
 #include <limits.h>
 #include <unistd.h>
+#include <string.h>
 
 typedef struct format
 {
@@ -32,5 +33,8 @@ int print_hex_upper(unsigned long int num);
 int print_pointer(va_list val);
 int print_revrs_str(va_list val);
 int print_rot13(va_list val);
+int printf_characters(va_list args, const char* format);
+int handle_zero_flag(int value, int width);
+
 
 #endif

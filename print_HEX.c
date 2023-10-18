@@ -2,7 +2,7 @@
 
 /**
  *print_HEX - function name to convert hex int to upper case
- *@val: parameter for value 
+ *@val: parameter for value
  *
  *Return: return counter.
  */
@@ -19,7 +19,7 @@ int print_HEX(va_list val)
 		counter++;
 	}
 	counter++;
-	array = malloc(sizeof(int) *counter);
+	array = malloc(sizeof(int) * counter);
 	for (i = 0; i < counter; i++)
 	{
 		array[i] = rem % 16;

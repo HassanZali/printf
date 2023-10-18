@@ -2,7 +2,7 @@
 
 /**
  *print_HEX_extra - function name to convert hex int
- *@val: parameter to take argument value
+ *@num: parameter to take num
  *
  *Return: return counter.
  */
@@ -15,7 +15,7 @@ int print_HEX_extra(unsigned int num)
 	while (num / 16 != 0)
 	{
 		num = num / 16;
-		counter ++;
+		counter++;
 	}
 	counter++;
 	array = malloc(sizeof(int) * counter);

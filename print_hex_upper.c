@@ -2,7 +2,7 @@
 
 /**
  *print_hex_upper - function name to print hex-alpha in uppercase
- *num: function parameter to take number
+ *@num: function parameter to take number
  *
  *Return: return counter.
  */
@@ -19,14 +19,14 @@ int print_hex_upper(unsigned long int num)
 	}
 	counter++;
 	array = malloc(sizeof(long int) * counter);
-	
+
 	for (i = 0; i < counter; i++)
 	{
 		array[i] = rem % 16;
 		rem = rem / 16;
 	}
-	
-	for (i = counter - 1; i >= 0; i++)
+
+	for (i = counter - 1; i >= 0; i--)
 	{
 		if (array[i] > 9)
 			array[i] = array[i] + 39;
